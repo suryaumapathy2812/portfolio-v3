@@ -1,0 +1,145 @@
+---
+title: JavaScript - Email Notification
+description: Using EmailJS to send email Notification from client side.
+date: 2022-01-02
+---
+
+Lets send some email notifications using JavaScript shall we.
+
+
+## Lets Get Started
+
+
+To send email using JavaScript, 
+
+
+First we will register an account on [EmailJS](https://dashboard.emailjs.com/sign-up)
+
+
+![Untitled.png](/images/9bb4b16a-e715-4df5-8f0a-7df6b00e405d.png)
+
+
+Once Signed Up. Sign In to EmailJS
+
+
+![Untitled.png](/images/37425844-1073-4f5d-8d0e-48fa152b73e5.png)
+
+
+Once you are signed in. We’ll add a service provide to send emails from
+
+
+Click on Add New Service
+
+
+Will go with **Gmail** as our service provider (if you have your personal email from other providers you can choose the respective once).
+
+
+![Untitled.png](/images/761e3a40-38b2-4166-a4d2-5949c0b8f2ee.png)
+
+
+Click on connect account
+
+
+![Untitled.png](/images/4f2ffac3-9693-4766-931e-8fbe06242522.png)
+
+
+Click on Continue to provide EmailJS the access to our service provider 
+
+
+![Untitled.png](/images/08769371-7a2c-43fd-a48e-224bd57af934.png)
+
+
+Copy your service ID as we will need it later on.
+
+
+Finally choose Create Service
+
+
+![Untitled.png](/images/bfbe8b27-944f-4290-9872-160637fbfce8.png)
+
+
+You will receive a test email from Email JS to confirm that service has successfully created.
+
+
+![Untitled.png](/images/48ad16c8-b59d-4e7d-a6a3-beebc1661598.png)
+
+
+## Creating Email Template
+
+
+Now That we have added the email service provider lets create a email template.
+
+
+Go to Email Templates. 
+
+
+Choose Create New Templates
+
+
+![Untitled.png](/images/9d9079dc-8f4f-4f01-bb7b-973c8901ebcb.png)
+
+
+Replace your existing _To Email_ with `{{to_email}}`.
+
+
+![Untitled.png](/images/9247bfb9-a557-4b58-9db6-75a088c030e1.png)
+
+
+Will save the template and Copy the template ID from the settings tab.
+
+
+## Integration
+
+
+Now Lets integrate EmailJS to our Application.
+
+
+Go to Integrations > Browser.
+
+
+Copy the code snippet to your project’s `.html` file
+
+
+![Untitled.png](/images/7458f2e6-4945-4d05-bf96-bc5cd16d74c6.png)
+
+
+Now Create a `email.js` file in your project. 
+
+
+Copy and paste the below code in to your `email.js` and paste your `service-id` and `template id` that we have copied earlier. 
+
+
+```javascript
+function sendEmailNotification(body) {
+    emailjs.send(
+        "service_3g4ehec",
+        "template_ikz4w6w",
+        body
+    ).then(
+        function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+            // TODO: to do after Email is sent SUCCESSFULLY  //
+						....
+        }, function (error) {
+            console.log('FAILED...', error);
+            // TODO: to do if sending Email was UNSUCCESSFUL  //
+						.....
+        }
+    );
+}
+
+const emailBody = {
+    to_email: "to-email-address@something.com", // replace it with the receiver's email address
+    to_name: " Yop-mail ",                      // replace it with the receiver's name
+    message: "hello world",
+}
+
+sendEmailNotification(emailBody);
+```
+
+
+And thats it. 
+
+
+To send the email, Construct an `emailBody` object and pass it as an parameter to the `sendEmailNotification` function.
+

@@ -1,113 +1,146 @@
-import Image from "next/image";
+import Link from "next/link";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
+/* eslint-disable react/no-unescaped-entities */
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <section className="">
+      <article className="prose prose-base prose-quoteless prose-neutral dark:prose-invert grid grid-cols-1 font-light">
+        <h1 className="font-medium text-2xl mb-4">
+          hello, I'm Surya Umapathy 👋🏼{" "}
+        </h1>
+        <div className="flex flex-row space-x-4 items-start">
+          <div>
+            <p className="">
+              I'm passionate about building complex web applications and solving
+              challenging problems. Currently, I work as a Senior Executive at
+              <code className="ml-2 no-underline">
+                <Link
+                  href={
+                    "https://www.freshworks.com/company/philanthropy/software-academy/"
+                  }
+                >
+                  FSSA
+                </Link>
+              </code>
+              , where I develop web applications and manage the technical
+              infrastructure. My interests lie in web development and exploring
+              the potentials of AI and machine learning.
+            </p>
+            <p>
+              When I'm not coding or brainstorming new solutions, I enjoy
+              playing badminton. It helps me stay active and sharp, both
+              mentally and physically.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+        <div className="flex flex-row space-x-4 items-start mt-8">
+          <h2 className="m-1.5 uppercase text-xs font-medium tracking-widest text-muted-foreground">
+            Work
           </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <div className="space-y-8">
+            <div className="space-y-3.5 w-full">
+              <div className="md:flex block md:items-center w-full space-x-4">
+                <div className="shrink-0 inline font-medium">Freshworks</div>
+                <div className="grow-1 hidden md:inline w-full h-px bg-zinc-800"></div>
+                <div className="text-sm shrink-0 inline text-muted-foreground">
+                  2021 - Present
+                </div>
+              </div>
+              <div className="text-muted-foreground text-sm font-normal leading-6">
+                Freshworks STS Software Academy (FSSA) is a social impact
+                initiative by Freshworks Technologies Pvt Ltd, designed to
+                empower students from low-income families through software
+                skills education. I develop web applications, teach students,
+                and maintain the technical infrastructure, helping transform
+                lives through technology.
+              </div>
+            </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+            <div className="space-y-3.5 w-full">
+              <div className="md:flex block md:items-center w-full space-x-4">
+                <div className="shrink-0 inline font-medium">
+                  Assay Clinical Research
+                </div>
+                <div className="grow-1 hidden md:inline w-full h-px bg-zinc-800"></div>
+                <div className="text-sm shrink-0 inline text-muted-foreground">
+                  2020 - 2021
+                </div>
+              </div>
+              <div className="text-muted-foreground text-sm font-normal leading-6">
+                Assay Clinical Research develops SaaS applications to automate
+                the clinical trial process. I worked as a Full Stack Developer,
+                focusing on database architecture and modernizing the tech
+                stack, enhancing the performance and scalability of their
+                applications.
+              </div>
+            </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+            <div className="space-y-3.5 w-full">
+              <div className="md:flex block md:items-center w-full space-x-4">
+                <div className="shrink-0 inline font-medium">Spinsoft</div>
+                <div className="grow-1 hidden md:inline w-full h-px bg-zinc-800"></div>
+                <div className="text-sm shrink-0 inline text-muted-foreground">
+                  2019 - 2020
+                </div>
+              </div>
+              <div className="text-muted-foreground text-sm font-normal leading-6">
+                Spinsoft Learning Solutions Pvt Ltd creates educational products
+                to improve learning outcomes. As a Front-End Developer, I
+                improved the user interface of educational tools, making them
+                more efficient and enjoyable for users.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-row space-x-4 items-start mt-14">
+          <h2 className="m-1.5 uppercase text-xs font-medium tracking-widest text-muted-foreground">
+            Tech
           </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+
+          <div className="space-y-4 w-full">
+            <div className="w-full">
+              <div className="md:flex block md:items-center w-full space-x-4">
+                <div className="shrink-0 inline font-medium">
+                  React, NextJS, Angular, TypeScript
+                </div>
+                <div className="grow-1 hidden md:inline w-full h-px bg-zinc-800"></div>
+                <div className="text-sm shrink-0 inline text-muted-foreground">
+                  4  Years
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full">
+              <div className="md:flex block md:items-center w-full space-x-4">
+                <div className="shrink-0 inline font-medium">
+                  NodeJS, Express, NestJS, SpringBoot
+                </div>
+                <div className="grow-1 hidden md:inline w-full h-px bg-zinc-800"></div>
+                <div className="text-sm shrink-0 inline text-muted-foreground">
+                  3+ Years
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full">
+              <div className="md:flex block md:items-center w-full space-x-4">
+                <div className="shrink-0 inline font-medium">
+                  AWS, GCP, Docker
+                </div>
+                <div className="grow-1 hidden md:inline w-full h-px bg-zinc-800"></div>
+                <div className="text-sm shrink-0 inline text-muted-foreground">
+                  1+ Years
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </article>
+    </section>
   );
 }
