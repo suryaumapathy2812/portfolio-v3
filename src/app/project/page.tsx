@@ -1,4 +1,4 @@
-import GithubRepoCard from "@/components/github-repo-card";
+// import GithubRepoCard from "@/components/github-repo-card";
 import Link from "next/link";
 
 const repos = [
@@ -8,7 +8,7 @@ const repos = [
       "A Google Chrome extension developed using Next.js 14, designed to track the time spent on different websites. It records the active time on each website, aggregates it at the domain level, and provides a summary view of web activity. The extension includes features like URL filtering, daily data reset, and sending usage statistics to a server.",
       // "Tech Stack: Next.js, Chrome Extensions API",
     ],
-    link: "https://github.com/side-projectz/page-trail",
+    link: "https://app-pagetrail.vercel.app/",
   },
   {
     name: "Code-Chat - VS Code Extension",
