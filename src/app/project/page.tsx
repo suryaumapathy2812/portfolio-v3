@@ -11,6 +11,14 @@ const repos = [
     link: "https://github.com/side-projectz/page-trail",
   },
   {
+    name: "Code-Chat - VS Code Extension",
+    description: [
+      "chat-code is a Visual Studio Code extension that enables developers to interact with their codebase through natural language. This extension allows you to ask questions, get explanations, and even request code modifications or enhancements by simply chatting with your code. It's like having a conversation with your codebase to streamline your development process.",
+      // "Tech Stack: TypeScript, VS Code API",
+    ],
+    link: "https://marketplace.visualstudio.com/items?itemName=suryaumapathy2812.chat-code"
+  },
+  {
     name: "Zord - Slack Bot",
     description: [
       "A dynamic Slack bot designed to create polls, collect responses, and provide real-time statistics directly within Slack channels. This bot enables users to easily create different types of polls, gather instant feedback, and visualize results, enhancing team collaboration and decision-making.",

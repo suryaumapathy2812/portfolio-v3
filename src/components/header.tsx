@@ -12,10 +12,10 @@ const headers = [
     label: "Home",
     href: "/",
   },
-  {
-    label: "Work",
-    href: "/work",
-  },
+  // {
+  //   label: "Work",
+  //   href: "/work",
+  // },
   // {
   //   label: "Blog",
   //   href: "/blog",

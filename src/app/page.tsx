@@ -12,9 +12,8 @@ export default function Home() {
         <div className="flex flex-row space-x-4 items-start">
           <div>
             <p className="">
-              I'm passionate about building complex web applications and solving
-              challenging problems. Currently, I work as a Senior Executive at
-              <code className="ml-2 no-underline">
+              As a Senior Executive at{" "}
+              <code className="ml-1 no-underline">
                 <Link
                   href={
                     "https://www.freshworks.com/company/philanthropy/software-academy/"
@@ -23,14 +22,16 @@ export default function Home() {
                   FSSA
                 </Link>
               </code>
-              , where I develop web applications and manage the technical
-              infrastructure. My interests lie in web development and exploring
-              the potentials of AI and machine learning.
+              , I specialize in developing and managing web applications with a
+              strong focus on technical infrastructure. My passion lies in
+              creating innovative solutions for complex challenges, particularly
+              in the realms of web development, AI, and machine learning. With a
+              commitment to continuous learning and improvement, I strive to
+              push the boundaries of what’s possible in the tech world.
             </p>
             <p>
-              When I'm not coding or brainstorming new solutions, I enjoy
-              playing badminton. It helps me stay active and sharp, both
-              mentally and physically.
+              Outside of work, I maintain a balanced lifestyle by playing
+              badminton, which keeps me both mentally and physically sharp.”
             </p>
           </div>
         </div>
@@ -50,12 +51,14 @@ export default function Home() {
                 </div>
               </div>
               <div className="text-muted-foreground text-sm font-normal leading-6">
-                Freshworks STS Software Academy (FSSA) is a social impact
-                initiative by Freshworks Technologies Pvt Ltd, designed to
-                empower students from low-income families through software
-                skills education. I develop web applications, teach students,
-                and maintain the technical infrastructure, helping transform
-                lives through technology.
+                At Freshworks, I contribute to the STS Software Academy (FSSA),
+                a transformative social impact initiative aimed at empowering
+                students from low-income families through comprehensive software
+                skills education. My role involves developing robust web
+                applications, mentoring students, and maintaining the technical
+                infrastructure that supports this initiative. Through my work, I
+                am committed to leveraging technology to create lasting social
+                change.
               </div>
             </div>
 
@@ -70,11 +73,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="text-muted-foreground text-sm font-normal leading-6">
-                Assay Clinical Research develops SaaS applications to automate
-                the clinical trial process. I worked as a Full Stack Developer,
-                focusing on database architecture and modernizing the tech
-                stack, enhancing the performance and scalability of their
-                applications.
+                During my time at Assay Clinical Research, I played a key role
+                as a Full Stack Developer in modernizing and enhancing their
+                SaaS applications designed to streamline the clinical trial
+                process. I focused on improving database architecture and
+                upgrading the technology stack, significantly boosting the
+                performance and scalability of the applications.
               </div>
             </div>
 
@@ -87,10 +91,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="text-muted-foreground text-sm font-normal leading-6">
-                Spinsoft Learning Solutions Pvt Ltd creates educational products
-                to improve learning outcomes. As a Front-End Developer, I
-                improved the user interface of educational tools, making them
-                more efficient and enjoyable for users.
+                At Spinsoft Learning Solutions, I worked as a Front-End
+                Developer dedicated to improving the user experience of
+                educational tools. My efforts were centered around refining the
+                user interface to create more efficient, user-friendly products
+                that enhance learning outcomes and provide a more enjoyable
+                experience for users.
               </div>
             </div>
           </div>
@@ -109,7 +115,7 @@ export default function Home() {
                 </div>
                 <div className="grow-1 hidden md:inline w-full h-px bg-zinc-800"></div>
                 <div className="text-sm shrink-0 inline text-muted-foreground">
-                  4  Years
+                  4 Years
                 </div>
               </div>
             </div>
@@ -117,7 +123,7 @@ export default function Home() {
             <div className="w-full">
               <div className="md:flex block md:items-center w-full space-x-4">
                 <div className="shrink-0 inline font-medium">
-                  NodeJS, Express, NestJS, SpringBoot
+                  NodeJS, Express, NestJS
                 </div>
                 <div className="grow-1 hidden md:inline w-full h-px bg-zinc-800"></div>
                 <div className="text-sm shrink-0 inline text-muted-foreground">
@@ -137,7 +143,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </article>
