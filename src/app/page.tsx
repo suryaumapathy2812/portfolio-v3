@@ -12,7 +12,7 @@ export default function Home() {
         <div className="flex flex-row space-x-4 items-start">
           <div>
             <p className="">
-              As a Senior Executive at{" "}
+              As a Senior Analyst at{" "}
               <code className="ml-1 no-underline">
                 <Link
                   href={
